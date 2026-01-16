@@ -1,0 +1,15 @@
+{
+    "name": "youcode/l-architecture-mvc",
+    "autoload": {
+        "psr-4": {
+            "Youcode\\LArchitectureMvc\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "oughlane",
+            "email": "mohammedoughlane72@gmail.com"
+        }
+    ],
+    "require": {}
+}
