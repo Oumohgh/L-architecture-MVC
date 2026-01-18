@@ -6,12 +6,12 @@ use App\Router;
 use App\Controllers\HomeController;
 use App\Controllers\UserController;
 
-$router = new Router();
+// $router = new Router();
 
 // Define routes
-$router->get('/', [HomeController::class, 'index']);
-$router->get('/about', [HomeController::class, 'about']);
-$router->get('/users', [UserController::class, 'index']);
+// $router->get('/', [HomeController::class, 'index']);
+// $router->get('/about', [HomeController::class, 'about']);
+// $router->get('/users', [UserController::class, 'index']);
 
 // Handle the current request
 echo $router->resolve();
