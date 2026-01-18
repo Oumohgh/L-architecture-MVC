@@ -1,5 +1,6 @@
-<php
 
+<?php include("./app/views/partials/head.php"); ?>
+<?php include("./app/views/partials/nav.php"); ?>
 <main class="container">
     <h2 class="mb-4">tableau de bord de l utilisateur</h2>
 
@@ -19,3 +20,4 @@
     </div>
 </main>
 
+<?php include("./app/views/partials/footer.php"); ?>

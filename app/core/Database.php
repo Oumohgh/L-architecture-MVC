@@ -2,19 +2,28 @@
 namespace App\core;
 use PDO;
 use PDOException;
-class DataBase{
-    private static ?PDO $pdo = NULL;
+class Database{
+ private static ?PDO $pdo=null;
 
-    public static function Conne(){
-        if(self::$pdo == NULL){
-            try{
-            self::$pdo = new PDO("pgsql:host=localhost;dbname=MVC","root","");
-            }
-            catch(PDOException $e){
-                echo $e->getMessage();
+ public static function getInstance():PDO{
+    if(self::$pdo===null){
+        try {
+            self::$pdo= new PDO ("mysql:host=localhost;dbname=MVC;charset=utf8",
+            "root",
+            "",
+            [
+                PDO::ATTR_ERRMODE -> PDO::ERRMODE_EXCEPTION,
+                PDO::ATTR_DEFAULT_FETCH_MODE=> PDO::FETCH
+            ]  ]
+                );
+            } catch (PDOException $e) {
+                die($e->getMessage());
             }
         }
 
         return self::$pdo;
-    } 
+    }
 }
+
+
+  

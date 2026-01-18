@@ -1,3 +1,6 @@
+<?php include("./app/views/partials/head.php"); 
+include("./app/views/partials/head.php"); ?>
+
 <main class="container">
     <div class="card p-4 shadow-sm col-md-6 mx-auto">
         <h2 class="mb-3">Mon Profile</h2>
@@ -17,3 +20,4 @@
         </form>
     </div>
 </main>
+<?php include("./app/views/partials/footer.php");?>
